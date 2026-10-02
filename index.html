@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atanas G. Stefanov — Mathematics, UAB</title>
+<meta name="description" content="Homepage of Atanas G. Stefanov, Professor of Mathematics, University of Alabama at Birmingham. Analysis of PDE, solitons, dispersive and dissipative equations.">
+<style>
+  :root {
+    --accent: #1e6b52;      /* UAB green */
+    --text: #2b2b2b;
+    --muted: #6b6b6b;
+    --bg: #ffffff;
+    --soft: #f4f6f5;
+    --line: #e2e6e4;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+
+  /* Navigation */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: #ffffff;
+    border-bottom: 1px solid var(--line);
+  }
+  nav .inner {
+    max-width: 920px; margin: 0 auto; padding: 14px 24px;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
+  }
+  nav .name { font-weight: bold; color: var(--text); font-size: 18px; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 20px; }
+  nav ul a {
+    color: var(--muted);
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px; letter-spacing: 0.03em; text-transform: uppercase;
+  }
+  nav ul a:hover { color: var(--accent); text-decoration: none; }
+
+  main { max-width: 920px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  h2 { font-size: 26px; margin: 0 0 20px; color: var(--accent); font-weight: normal; }
+  h3 { font-size: 18px; margin: 28px 0 10px; }
+
+  /* About */
+  .about { display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap; }
+  .about img {
+    width: 200px; height: 240px; object-fit: cover;
+    border-radius: 6px; background: var(--soft); border: 1px solid var(--line);
+  }
+  .about .bio { flex: 1; min-width: 260px; }
+  .about h1 { font-size: 34px; margin: 0 0 4px; font-weight: normal; }
+  .about .title { color: var(--muted); margin: 0 0 18px; }
+  .contact {
+    margin-top: 18px; padding: 14px 18px; background: var(--soft); border-radius: 6px;
+    font-size: 15px;
+  }
+  .contact div { margin: 3px 0; }
+
+  /* Lists */
+  ol.pubs, ul.items { padding-left: 22px; }
+  ol.pubs li, ul.items li { margin-bottom: 14px; }
+  .ptitle { font-style: italic; }
+  .venue { color: var(--muted); }
+  .links a {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px; margin-right: 8px;
+    border: 1px solid var(--line); padding: 1px 8px; border-radius: 4px;
+  }
+  .button {
+    display: inline-block; margin-top: 6px;
+    background: var(--accent); color: #fff !important;
+    padding: 10px 20px; border-radius: 5px;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px;
+  }
+  .button:hover { opacity: 0.9; text-decoration: none; }
+
+  /* Timeline (appointments) */
+  table.timeline { border-collapse: collapse; width: 100%; }
+  table.timeline td { padding: 6px 0; vertical-align: top; border-bottom: 1px solid var(--line); }
+  table.timeline td.yr {
+    width: 150px; padding-right: 18px; color: var(--muted); white-space: nowrap;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; padding-top: 8px;
+  }
+
+  /* Students */
+  .students { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; }
+  .student {
+    border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; background: #fff;
+  }
+  .student .sname { font-size: 18px; font-weight: bold; }
+  .student .deg { color: var(--muted); font-size: 15px; margin-bottom: 6px; }
+  .student .diss { font-style: italic; margin-bottom: 8px; }
+  .student .jobs { font-size: 15px; }
+  .student .jobs div { margin: 2px 0; }
+  .label { color: var(--muted); }
+
+  footer {
+    text-align: center; color: var(--muted); font-size: 14px;
+    padding: 40px 24px; border-top: 1px solid var(--line); margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    .about img { width: 150px; height: 180px; }
+    nav ul { gap: 14px; }
+    .students { grid-template-columns: 1fr; }
+    table.timeline td.yr { width: 120px; padding-right: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav>
+  <div class="inner">
+    <a class="name" href="#about">Atanas G. Stefanov</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#students">Students</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="about">
+    <!-- Upload a photo named photo.jpg next to this file; it is hidden until then -->
+    <img src="photo.jpg" alt="Photo of Atanas G. Stefanov" onerror="this.style.display='none'">
+    <div class="bio">
+      <h1>Atanas G. Stefanov</h1>
+      <p class="title">Professor · <a href="https://www.uab.edu/cas/mathematics/">Department of Mathematics</a> · University of Alabama at Birmingham</p>
+      <p>
+        I am a Professor in the
+        <a href="https://www.uab.edu/cas/mathematics/">Department of Mathematics</a>
+        at the University of Alabama at Birmingham (UAB). My research is in the analysis of
+        partial differential equations, in particular soliton and near-soliton dynamics,
+        local and global behavior of dispersive PDE, and asymptotics for dissipative PDE.
+      </p>
+      <p>
+        Before joining UAB in 2021, I was a Professor in the
+        <a href="https://math.ku.edu/">Department of Mathematics</a> at the University of Kansas.
+        I received my Ph.D. in Mathematics from the University of Missouri in 1999.
+      </p>
+      <div class="contact sans">
+        <div><strong>Email:</strong> <a href="mailto:stefanov@uab.edu">stefanov@uab.edu</a></div>
+        <div><strong>Phone:</strong> (205) 934-8551</div>
+        <div><strong>Office:</strong> University Hall, Room 4005</div>
+        <div><strong>Address:</strong> 1402 10th Avenue S., Birmingham, AL 35294-1241</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Appointments</h3>
+  <table class="timeline">
+    <tr><td class="yr">2021 – present</td><td>Professor, University of Alabama at Birmingham</td></tr>
+    <tr><td class="yr">2012 – 2021</td><td>Professor, University of Kansas</td></tr>
+    <tr><td class="yr">2007 – 2012</td><td>Associate Professor, University of Kansas</td></tr>
+    <tr><td class="yr">2002 – 2007</td><td>Assistant Professor, University of Kansas</td></tr>
+    <tr><td class="yr">2000 – 2002</td><td>Visiting Assistant Professor, University of Massachusetts Amherst</td></tr>
+    <tr><td class="yr">1999 – 2000</td><td>Postdoctoral Fellow, Syracuse University</td></tr>
+  </table>
+</section>
+
+<!-- ===================== RESEARCH ===================== -->
+<section id="research">
+  <h2>Research</h2>
+  <p>
+    My interests lie in the analysis of partial differential equations:
+  </p>
+  <ul class="items">
+    <li><strong>Soliton dynamics</strong> — linear and nonlinear stability of solitary waves in dispersive models, asymptotic stability; solitary waves in spatially discrete systems.</li>
+    <li><strong>Dispersive PDE</strong> — local and global behavior of nonlinear Schrödinger, wave, Klein–Gordon, Dirac, KdV, Ostrovsky and Whitham models.</li>
+    <li><strong>Dissipative PDE</strong> — well-posedness, regularity and sharp asymptotics for fluid models such as the Boussinesq system and the quasi-geostrophic equation.</li>
+  </ul>
+
+  <h3>Selected publications</h3>
+  <p class="sans" style="font-size:15px;color:var(--muted);margin-top:-4px;">
+    A complete list of publications is in my <a href="Stefanov_CV_UAB_web.pdf">CV</a>.
+  </p>
+  <ol class="pubs">
+    <li>
+      S. Hakkaev, M. Stanislavova, A. G. Stefanov,
+      <span class="ptitle">Existence and stability for the travelling waves of the Benjamin equation.</span>
+      <span class="venue">Nonlinearity 38 (2025), 025020.</span>
+    </li>
+    <li>
+      A. G. Stefanov, R. M. Ross, P. G. Kevrekidis,
+      <span class="ptitle">Ground states in spatially discrete non-linear Schrödinger lattices.</span>
+      <span class="venue">Nonlinearity 36 (2023), no. 8, 4053–4085.</span>
+      <span class="links"><a href="https://iopscience.iop.org/article/10.1088/1361-6544/acdbfc/pdf">PDF</a></span>
+    </li>
+    <li>
+      S. Hakkaev, M. Stanislavova, A. G. Stefanov,
+      <span class="ptitle">On the stability of periodic waves for the cubic derivative NLS and the quintic NLS.</span>
+      <span class="venue">J. Nonlinear Sci. 31 (2021), no. 54.</span>
+      <span class="links"><a href="https://arxiv.org/abs/2006.13658">arXiv</a></span>
+    </li>
+    <li>
+      A. G. Stefanov,
+      <span class="ptitle">On the normalized ground states of second order PDE's with mixed power non-linearities.</span>
+      <span class="venue">Comm. Math. Phys. 369 (2019), no. 3, 929–971.</span>
+    </li>
+    <li>
+      A. Comech, T. V. Phan, A. G. Stefanov,
+      <span class="ptitle">Asymptotic stability of solitary waves in generalized Gross–Neveu model.</span>
+      <span class="venue">Ann. Inst. H. Poincaré Anal. Non Linéaire 34 (2017), no. 1, 157–196.</span>
+    </li>
+    <li>
+      M. Stanislavova, A. G. Stefanov,
+      <span class="ptitle">On the spectral problem <i>Lu</i> = λ<i>u</i>′ and applications.</span>
+      <span class="venue">Comm. Math. Phys. 343 (2016), no. 2, 361–391.</span>
+    </li>
+    <li>
+      A. G. Stefanov, P. G. Kevrekidis,
+      <span class="ptitle">On the existence of solitary traveling waves for generalized Hertzian chains.</span>
+      <span class="venue">J. Nonlinear Sci. 22 (2012), no. 3, 327–349.</span>
+    </li>
+    <li>
+      A. G. Stefanov, P. G. Kevrekidis,
+      <span class="ptitle">Asymptotic behavior of small solutions for the discrete nonlinear Schrödinger and Klein–Gordon equations.</span>
+      <span class="venue">Nonlinearity 18 (2005), 1841–1857.</span>
+    </li>
+    <li>
+      A. Nahmod, A. G. Stefanov, K. Uhlenbeck,
+      <span class="ptitle">On the well-posedness of the wave map problem in high dimensions.</span>
+      <span class="venue">Comm. Anal. Geom. 11 (2003), 49–83.</span>
+    </li>
+    <li>
+      A. Nahmod, A. G. Stefanov, K. Uhlenbeck,
+      <span class="ptitle">On Schrödinger maps.</span>
+      <span class="venue">Comm. Pure Appl. Math. 56 (2003), 114–151; Erratum: Comm. Pure Appl. Math. 57 (2004), 833–839.</span>
+    </li>
+  </ol>
+</section>
+
+<!-- ===================== TEACHING ===================== -->
+<section id="teaching">
+  <h2>Teaching</h2>
+  <h3 style="margin-top:0">Graduate courses</h3>
+  <p>Mathematical Analysis I, II · Measure Theory · Complex Analysis · Functional Analysis I, II · Fourier Analysis and PDE · Advanced PDE</p>
+  <h3>Undergraduate courses</h3>
+  <p>Calculus I, II, III · Linear Algebra · Elementary ODE · Calculus of Variations · Applied PDE</p>
+  <h3>Teaching awards</h3>
+  <ul class="items">
+    <li>Max Wells Teaching Award, University of Kansas, 2019</li>
+    <li>G. Baley Price Teaching Award (KU Mathematics Graduate Student Association), 2018</li>
+  </ul>
+</section>
+
+<!-- ===================== STUDENTS ===================== -->
+<section id="students">
+  <h2>Ph.D. Students</h2>
+
+  <h3 style="margin-top:0">Current students</h3>
+  <ul class="items">
+    <li><strong>Malihe Farziharomi</strong>, University of Alabama at Birmingham</li>
+  </ul>
+
+  <h3>Former students</h3>
+  <div class="students">
+
+    <div class="student">
+      <div class="sname"><a href="https://www.linkedin.com/in/vishnu-prasad-iyer">Vishnu Iyer</a></div>
+      <div class="deg sans">Ph.D. 2025, University of Alabama at Birmingham</div>
+      <div class="diss">Solitary waves for power degenerate NLS and a fourth order wave equation</div>
+      <div class="jobs sans">
+        <div><span class="label">First job:</span> Model Risk Analyst, First Horizon Bank, Birmingham, AL</div>
+      </div>
+    </div>
+
+    <div class="student">
+      <div class="sname"><a href="https://www.linkedin.com/in/ramadan-abba-70bbb475">Abba Ramadan</a></div>
+      <div class="deg sans">Ph.D. 2022, University of Kansas</div>
+      <div class="diss">Existence and Stability of Solitary Waves for NLS with Defects</div>
+      <div class="jobs sans">
+        <div><span class="label">First job:</span> Postdoctoral Fellow, University of Alabama</div>
+        <div><span class="label">Current:</span> Tenure-track Assistant Professor, University of Alabama</div>
+      </div>
+    </div>
+
+    <div class="student">
+      <div class="sname"><a href="https://www.linkedin.com/in/bsisom">Brad Isom</a></div>
+      <div class="deg sans">Ph.D. 2021, University of Kansas (co-advised with D. Mantzavinos)</div>
+      <div class="diss">Growth Bounds and Nonlinear Smoothing for the Periodic Benjamin–Ono and Derivative Nonlinear Schrödinger Equations</div>
+      <div class="jobs sans">
+        <div><span class="label">First job:</span> Credit Risk Analyst, T-Mobile, Kansas City</div>
+        <div><span class="label">Current:</span> Credit Strategy Manager, T-Mobile, Kansas City</div>
+      </div>
+    </div>
+
+    <div class="student">
+      <div class="sname">Fazel Hadadifard</div>
+      <div class="deg sans">Ph.D. 2019, University of Kansas</div>
+      <div class="diss">Sharp time asymptotics for the quasi-geostrophic equation, the Boussinesq system and near plane waves of reaction-diffusion models</div>
+      <div class="jobs sans">
+        <div><span class="label">First jobs:</span> Visiting Assistant Professor, Drexel University; Visiting Assistant Professor, University of California, Riverside</div>
+        <div><span class="label">Current:</span> AI Mathematician, Meta</div>
+      </div>
+    </div>
+
+    <div class="student">
+      <div class="sname"><a href="https://www.linkedin.com/in/iurii-posukhovskyi">Iurii Posukhovskyi</a></div>
+      <div class="deg sans">Ph.D. 2019, University of Kansas</div>
+      <div class="diss">On the Existence and Stability of Normalized Ground States of the Kawahara, Fourth Order NLS and the Ostrovsky Equations</div>
+      <div class="jobs sans">
+        <div><span class="label">First job:</span> Data Scientist, Home Depot, Atlanta, GA</div>
+        <div><span class="label">Current:</span> Data Science Manager, Wells Fargo Bank, Charlotte, NC</div>
+      </div>
+    </div>
+
+    <div class="student">
+      <div class="sname"><a href="https://www.linkedin.com/in/seunglyoh">Seungly Oh</a></div>
+      <div class="deg sans">Ph.D. 2012, University of Kansas</div>
+      <div class="diss">Normal Form Approach for Dispersive Equations with Low-Regularity Data</div>
+      <div class="jobs sans">
+        <div><span class="label">First job:</span> Postdoc, University of Missouri, Columbia</div>
+        <div><span class="label">Current:</span> Associate Professor, Western New England University, Springfield, MA</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CV ===================== -->
+<section id="cv">
+  <h2>Curriculum Vitae</h2>
+  <p>My full CV, including the complete publication list, grants and invited talks.</p>
+  <a class="button" href="Stefanov_CV_UAB_web.pdf">Download CV (PDF)</a>
+</section>
+
+</main>
+
+<footer class="sans">
+  © 2026 Atanas G. Stefanov · Department of Mathematics, University of Alabama at Birmingham
+</footer>
+
+</body>
+</html>
