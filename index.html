@@ -94,23 +94,6 @@
     font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; padding-top: 8px;
   }
 
-  /* Grants */
-  table.grants { border-collapse: collapse; width: 100%; }
-  table.grants th {
-    text-align: left; font-weight: normal; color: var(--muted); font-size: 13px;
-    text-transform: uppercase; letter-spacing: 0.04em; padding: 0 0 8px;
-    border-bottom: 2px solid var(--line);
-    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  }
-  table.grants td { padding: 12px 0; vertical-align: top; border-bottom: 1px solid var(--line); }
-  table.grants td.yr, table.grants td.amt {
-    white-space: nowrap; font-size: 15px;
-    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  }
-  table.grants td.yr { color: var(--muted); padding-right: 18px; width: 130px; }
-  table.grants .amt { text-align: right; padding-left: 18px; }
-  table.grants .role { color: var(--muted); font-size: 14px; font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-
   /* Students */
   .students { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; }
   .student {
@@ -146,7 +129,6 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
-      <li><a href="#grants">Grants</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#students">Students</a></li>
       <li><a href="#cv">CV</a></li>
@@ -199,236 +181,18 @@
 <!-- ===================== RESEARCH ===================== -->
 <section id="research">
   <h2>Research</h2>
-  <p>
-    My interests lie in the analysis of partial differential equations:
-  </p>
   <ul class="items">
-    <li><strong>Soliton dynamics</strong> — linear and nonlinear stability of solitary waves in dispersive models, asymptotic stability; solitary waves in spatially discrete systems.</li>
-    <li><strong>Dispersive PDE</strong> — local and global behavior of nonlinear Schrödinger, wave, Klein–Gordon, Dirac, KdV, Ostrovsky and Whitham models.</li>
-    <li><strong>Dissipative PDE</strong> — well-posedness, regularity and sharp asymptotics for fluid models such as the Boussinesq system and the quasi-geostrophic equation.</li>
+    <li>Harmonic Analysis</li>
+    <li>Functional Analysis</li>
+    <li>Analysis of Partial Differential Equations</li>
   </ul>
-  <p>
-    My research is currently supported by NSF grant DMS-2605398,
-    <i>Beyond Scalar Models: Variational Methods, Stability and Dynamics for Infinite Dimensional Dynamical Systems</i> (2026–2029).
-  </p>
-
-  <p class="sans" style="font-size:15px;color:var(--muted);">
-    A complete list of publications is in my <a href="resume.pdf">CV</a>.
-  </p>
-
-  <h3>Recent publications</h3>
-  <!-- Newest first. Copy one <li>...</li> block for each paper. -->
-  <ol class="pubs">
-    <li>
-      A. G. Stefanov,
-      <span class="ptitle">Asymptotic stability for monotone traveling kinks of the dissipative Boussinesq problem.</span>
-      <span class="venue">Submitted.</span>
-      <span class="links"><a href="https://arxiv.org/abs/2606.27690">arXiv</a></span>
-    </li>
-    <li>
-      A. G. Stefanov, J. Wu, X. Xu, Z. Ye,
-      <span class="ptitle">Global regularity of the 2D fractional Boussinesq equations with subcritical dissipation.</span>
-      <span class="venue">Submitted.</span>
-      <span class="links"><a href="https://arxiv.org/abs/2606.03680">arXiv</a></span>
-    </li>
-    <li>
-      M. Stanislavova, A. G. Stefanov, J. Cuevas-Maraver, P. G. Kevrekidis,
-      <span class="ptitle">On a Klein–Gordon reduction for oscillons.</span>
-      <span class="venue">J. Nonlinear Waves 2 (2026), e11.</span>
-      <span class="links"><a href="https://doi.org/10.1017/jnw.2026.10037">Open access</a><a href="https://arxiv.org/abs/2508.12142">arXiv</a></span>
-    </li>
-    <li>
-      A. G. Stefanov, P. G. Kevrekidis,
-      <span class="ptitle">Kinks of fractional φ<sup>4</sup> models: existence, uniqueness, stability, monotonicity and sharp asymptotics.</span>
-      <span class="venue">Nonlinearity 39 (2026), no. 5, 055007.</span>
-      <span class="links"><a href="https://doi.org/10.1088/1361-6544/ae669c">Open access</a><a href="https://arxiv.org/abs/2503.15806">arXiv</a></span>
-    </li>
-    <li>
-      V. Iyer, R. Parker, A. G. Stefanov,
-      <span class="ptitle">Existence and stability for traveling waves of fourth order semilinear wave and Schrödinger equations.</span>
-      <span class="venue">Stud. Appl. Math. 156 (2026), no. 4, Paper No. e70214.</span>
-      <span class="links"><a href="https://doi.org/10.1111/sapm.70214">Open access</a><a href="https://arxiv.org/abs/2512.12390">arXiv</a></span>
-    </li>
-    <li>
-      M. Stanislavova, A. G. Stefanov,
-      <span class="ptitle">Asymptotic attraction with algebraic rates toward fronts of dispersive-diffusive Burgers equations.</span>
-      <span class="venue">J. Nonlinear Waves 1 (2025), 1–16.</span>
-      <span class="links"><a href="https://doi.org/10.1017/jnw.2025.10013">Open access</a><a href="https://arxiv.org/abs/2504.17745">arXiv</a></span>
-    </li>
-    <li>
-      O. Christov, S. Hakkaev, S. Oh, A. G. Stefanov,
-      <span class="ptitle">Dynamics of the Drinfeld–Sokolov–Wilson system: well-posedness and (in)stability of the traveling waves.</span>
-      <span class="venue">J. Differential Equations 439 (2025), 113410.</span>
-      <span class="links"><a href="https://arxiv.org/abs/2502.14723">arXiv</a></span>
-    </li>
-    <li>
-      S. Hakkaev, M. Stanislavova, A. G. Stefanov,
-      <span class="ptitle">Existence and stability for the travelling waves of the Benjamin equation.</span>
-      <span class="venue">Nonlinearity 38 (2025), 025020.</span>
-      <span class="links"><a href="https://doi.org/10.1088/1361-6544/adabaa">Open access</a><a href="https://arxiv.org/abs/2408.16715">arXiv</a></span>
-    </li>
-    <li>
-      S. Hakkaev, A. G. Stefanov,
-      <span class="ptitle">On the stability of the dnoidal waves for the Schrödinger–KdV system.</span>
-      <span class="venue">Proc. Amer. Math. Soc. 153 (2025), 715–725.</span>
-      <span class="links"><a href="https://arxiv.org/abs/2310.05888">arXiv</a></span>
-    </li>
-    <li>
-      V. Iyer, A. G. Stefanov,
-      <span class="ptitle">Solitary waves for power degenerate NLS — existence and stability.</span>
-      <span class="venue">Calc. Var. Partial Differential Equations 64 (2025), no. 1, Paper No. 19.</span>
-      <span class="links"><a href="https://doi.org/10.1007/s00526-024-02877-4">Open access</a><a href="https://arxiv.org/abs/2410.15138">arXiv</a></span>
-    </li>
-  </ol>
-
-  <h3>Selected publications</h3>
-  <ol class="pubs">
-    <li>
-      S. Hakkaev, M. Stanislavova, A. G. Stefanov,
-      <span class="ptitle">Existence and stability for the travelling waves of the Benjamin equation.</span>
-      <span class="venue">Nonlinearity 38 (2025), 025020.</span>
-      <span class="links"><a href="https://doi.org/10.1088/1361-6544/adabaa">Open access</a></span>
-    </li>
-    <li>
-      A. G. Stefanov, R. M. Ross, P. G. Kevrekidis,
-      <span class="ptitle">Ground states in spatially discrete non-linear Schrödinger lattices.</span>
-      <span class="venue">Nonlinearity 36 (2023), no. 8, 4053–4085.</span>
-      <span class="links"><a href="https://iopscience.iop.org/article/10.1088/1361-6544/acdbfc/pdf">PDF</a></span>
-    </li>
-    <li>
-      S. Hakkaev, M. Stanislavova, A. G. Stefanov,
-      <span class="ptitle">On the stability of periodic waves for the cubic derivative NLS and the quintic NLS.</span>
-      <span class="venue">J. Nonlinear Sci. 31 (2021), no. 54.</span>
-      <span class="links"><a href="https://arxiv.org/abs/2006.13658">arXiv</a></span>
-    </li>
-    <li>
-      A. G. Stefanov,
-      <span class="ptitle">On the normalized ground states of second order PDE's with mixed power non-linearities.</span>
-      <span class="venue">Comm. Math. Phys. 369 (2019), no. 3, 929–971.</span>
-    </li>
-    <li>
-      A. Comech, T. V. Phan, A. G. Stefanov,
-      <span class="ptitle">Asymptotic stability of solitary waves in generalized Gross–Neveu model.</span>
-      <span class="venue">Ann. Inst. H. Poincaré Anal. Non Linéaire 34 (2017), no. 1, 157–196.</span>
-    </li>
-    <li>
-      M. Stanislavova, A. G. Stefanov,
-      <span class="ptitle">On the spectral problem <i>Lu</i> = λ<i>u</i>′ and applications.</span>
-      <span class="venue">Comm. Math. Phys. 343 (2016), no. 2, 361–391.</span>
-    </li>
-    <li>
-      A. G. Stefanov, P. G. Kevrekidis,
-      <span class="ptitle">On the existence of solitary traveling waves for generalized Hertzian chains.</span>
-      <span class="venue">J. Nonlinear Sci. 22 (2012), no. 3, 327–349.</span>
-    </li>
-    <li>
-      A. G. Stefanov, P. G. Kevrekidis,
-      <span class="ptitle">Asymptotic behavior of small solutions for the discrete nonlinear Schrödinger and Klein–Gordon equations.</span>
-      <span class="venue">Nonlinearity 18 (2005), 1841–1857.</span>
-    </li>
-    <li>
-      A. Nahmod, A. G. Stefanov, K. Uhlenbeck,
-      <span class="ptitle">On the well-posedness of the wave map problem in high dimensions.</span>
-      <span class="venue">Comm. Anal. Geom. 11 (2003), 49–83.</span>
-    </li>
-    <li>
-      A. Nahmod, A. G. Stefanov, K. Uhlenbeck,
-      <span class="ptitle">On Schrödinger maps.</span>
-      <span class="venue">Comm. Pure Appl. Math. 56 (2003), 114–151; Erratum: Comm. Pure Appl. Math. 57 (2004), 833–839.</span>
-    </li>
-  </ol>
-</section>
-
-<!-- ===================== GRANTS ===================== -->
-<section id="grants">
-  <h2>NSF Grants</h2>
-  <h3 style="margin-top:0">Current</h3>
-  <table class="grants">
-    <thead>
-      <tr><th>Years</th><th>Award &amp; title</th><th class="amt">Amount</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="yr">2026 – 2029</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2605398">DMS-2605398</a>, Applied Mathematics<br>
-          <i>Beyond Scalar Models: Variational Methods, Stability and Dynamics for Infinite Dimensional Dynamical Systems</i><br>
-          <span class="role">Single PI · UAB</span></td>
-        <td class="amt">$199,757</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h3>Past</h3>
-  <table class="grants">
-    <thead>
-      <tr><th>Years</th><th>Award &amp; title</th><th class="amt">Amount</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="yr">2021 – 2023</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2204788">DMS-2204788</a>, Applied Mathematics<br>
-          <i>Dynamics and Stability of Nonlinear Waves</i><br>
-          <span class="role">Single PI · UAB</span><br><span class="role">Continuation of DMS-1908626 after the move to UAB (remaining funds transferred)</span></td>
-        <td class="amt">$142,427</td>
-      </tr>
-      <tr>
-        <td class="yr">2019 – 2021</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1908626">DMS-1908626</a>, Applied Mathematics<br>
-          <i>Dynamics and Stability of Nonlinear Waves</i><br>
-          <span class="role">Single PI · University of Kansas</span></td>
-        <td class="amt">$231,127</td>
-      </tr>
-      <tr>
-        <td class="yr">2016 – 2020</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1614734">DMS-1614734</a>, Applied Mathematics<br>
-          <i>Stability of Solitary Waves in Dynamical Systems</i><br>
-          <span class="role">Single PI · University of Kansas</span></td>
-        <td class="amt">$193,000</td>
-      </tr>
-      <tr>
-        <td class="yr">2014 – 2015</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1419217">DMS-1419217</a>, Applied Mathematics<br>
-          <i>Workshop: Stability of Solitary Waves, May 25–30, 2014</i><br>
-          <span class="role">Co-PI with A. Comech · University of Kansas</span></td>
-        <td class="amt">$19,955</td>
-      </tr>
-      <tr>
-        <td class="yr">2013 – 2017</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1313107">DMS-1313107</a>, Applied Mathematics<br>
-          <i>Stability of Waves in Discrete and Continuous Dynamical Systems</i><br>
-          <span class="role">Single PI · University of Kansas</span></td>
-        <td class="amt">$184,655</td>
-      </tr>
-      <tr>
-        <td class="yr">2009 – 2013</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0908802">DMS-0908802</a>, Applied Mathematics<br>
-          <i>Stability in Discrete and Continuous Dynamical Systems</i><br>
-          <span class="role">Single PI · University of Kansas</span></td>
-        <td class="amt">$183,849</td>
-      </tr>
-      <tr>
-        <td class="yr">2007 – 2011</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0701802">DMS-0701802</a>, Analysis<br>
-          <i>Harmonic Analysis and Nonlinear Dispersive Equations</i><br>
-          <span class="role">Single PI · University of Kansas</span></td>
-        <td class="amt">$114,000</td>
-      </tr>
-      <tr>
-        <td class="yr">2003 – 2007</td>
-        <td><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0300511">DMS-0300511</a>, Analysis<br>
-          <i>Harmonic Analysis and Applications to Geometric PDE's</i><br>
-          <span class="role">Single PI · University of Kansas</span></td>
-        <td class="amt">$98,000</td>
-      </tr>
-    </tbody>
-  </table>
 </section>
 
 <!-- ===================== TEACHING ===================== -->
 <section id="teaching">
   <h2>Teaching</h2>
   <h3 style="margin-top:0">Graduate courses</h3>
-  <p>Mathematical Analysis I, II · Real Analysis / Measure Theory · Complex Analysis · Functional Analysis I, II · Fourier Analysis and PDE · Advanced PDE</p>
+  <p>Mathematical Analysis I, II · Measure Theory · Complex Analysis · Functional Analysis I, II · Fourier Analysis and PDE · Advanced PDE</p>
   <h3>Undergraduate courses</h3>
   <p>Calculus I, II, III · Linear Algebra · Elementary ODE · Calculus of Variations · Applied PDE</p>
   <h3>Teaching awards</h3>
@@ -517,7 +281,7 @@
 <section id="cv">
   <h2>Curriculum Vitae</h2>
   <p>My full CV, including the complete publication list, grants and invited talks.</p>
-  <a class="button" href="resume.pdf">Download CV (PDF)</a>
+  <a class="button" href="Stefanov_CV_UAB_web.pdf">Download CV (PDF)</a>
 </section>
 
 </main>
